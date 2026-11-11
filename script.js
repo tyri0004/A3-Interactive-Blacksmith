@@ -26,7 +26,11 @@ const $forgeStatus = document.getElementById("forge-status")
 const $forgeImage = document.getElementById("forge-image")
 const $actionMessage = document.getElementById("action-message")
 
-
+// assignment 3 selectors
+const $heatInput = document.getElementById("heat-input");
+const $addHeatButton = document.getElementById("add-heat");
+const $makeSwordButton = document.getElementById("make-sword");
+const $resetButton = document.getElementById("reset-forge");
 // 2. Create the two state variables: heat and swords made.
 let heat = 20 
 let swords = 0 
@@ -127,13 +131,8 @@ resetForge()
 //  If valid, call heatForge(amount)
 // Listen for clicks on Make sword and call makeSword()
 // Listen for clicks on Reset forge and call resetForge()
-const $heatInput = document.getElementById("heat-input");
-const $addHeatButton = document.getElementById("add-heat");
-const $makeSwordButton = document.getElementById("make-sword");
-const $resetButton = document.getElementById("reset-forge");
 
-
-// Heat event listener
+// Add heat event listener
 
 $addHeatButton.addEventListener("click", function(){
 
@@ -153,7 +152,7 @@ $addHeatButton.addEventListener("click", function(){
 
 });
 
-// Make Sword Button
+// Make sword event listener
 
 $makeSwordButton.addEventListener("click", function(){
 
@@ -161,8 +160,13 @@ $makeSwordButton.addEventListener("click", function(){
 
 });
 
+// Reset forge event listener
+
 $resetButton.addEventListener("click", function(){
 
     resetForge();
 
 });
+
+// Initialize the forge
+resetForge();
