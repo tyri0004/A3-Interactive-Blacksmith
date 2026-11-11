@@ -118,6 +118,15 @@ resetForge()
 // Completed testing, and everything seems to be working as intended!!!!!!! :))))
 
 // Assignment 3: Interactive Blacksmith start
+
+// Plan: 
+// Select the input and buttons
+// Listen for clicks on the Add heat button
+// Read the input and convert it into a number
+// Check that the input is a valid positive whole number
+//  If valid, call heatForge(amount)
+// Listen for clicks on Make sword and call makeSword()
+// Listen for clicks on Reset forge and call resetForge()
 const $heatInput = document.getElementById("heat-input");
 const $addHeatButton = document.getElementById("add-heat");
 const $makeSwordButton = document.getElementById("make-sword");
