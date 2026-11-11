@@ -77,7 +77,9 @@ function resetForge(){
     heat = 20;
     swords = 0; 
 
-    $actionMessage.textContent = "Welcome to the forge. Add heat to begin";
+    $heatInput.value = "";
+    $actionMessage.textContent = "";
+
 
     updateForge();
 
@@ -114,3 +116,9 @@ function makeSword(){
 resetForge()
 // Use the tests in ASSIGNMENT.md to check your work.
 // Completed testing, and everything seems to be working as intended!!!!!!! :))))
+
+// Assignment 3: Interactive Blacksmith start
+const $heatInput = document.getElementById("heat-input");
+const $addHeatButton = document.getElementById("add-heat");
+const $makeSwordButton = document.getElementById("make-sword");
+const $resetButton = document.getElementById("reset-forge");
