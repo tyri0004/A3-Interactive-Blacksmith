@@ -28,7 +28,75 @@ aside { display: grid; gap: 1.5rem; }
   display: grid;
   gap: .75rem;
 }
+.forge-controls label {
+  font-weight: bold;
+}
 
+.heat-input-row {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 1rem;
+  align-items: stretch;
+}
+
+.forge-controls input {
+  min-width: 0;
+  width: 100%;
+  padding: .85rem 1rem;
+  border: 1px solid #bdc9c2;
+  border-radius: .5rem;
+  font: inherit;
+  color: #212721;
+  background: white;
+}
+
+.forge-controls input:focus {
+  outline: 2px solid #006341;
+  outline-offset: 2px;
+}
+
+.forge-controls button {
+  padding: .85rem 1.25rem;
+  border: 2px solid #006341;
+  border-radius: .5rem;
+  background: #006341;
+  color: white;
+  font: inherit;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.forge-controls button:hover {
+  background: #004b31;
+}
+
+.forge-controls button:focus-visible {
+  outline: 3px solid #d69e3d;
+  outline-offset: 3px;
+}
+
+.forge-controls .note {
+  margin: 0;
+}
+
+.control-group {
+  margin-top: 1rem;
+  display: grid;
+  gap: .5rem;
+}
+
+.control-group button {
+  width: 100%;
+}
+
+.control-group:last-child button {
+  background: white;
+  color: #006341;
+}
+
+.control-group:last-child button:hover {
+  background: #e9f2ec;
+}
 
 dl { margin: 0; }
 dt { margin-top: 1rem; }
