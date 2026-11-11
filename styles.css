@@ -23,6 +23,13 @@ p { margin: 0 0 1rem; }
 .message-box p { margin: 0; min-height: 3.2em; }
 aside { display: grid; gap: 1.5rem; }
 .panel { padding: 1.5rem; background: white; border: 1px solid #bdc9c2; border-radius: 1rem; }
+/* additional css */
+.forge-controls {
+  display: grid;
+  gap: .75rem;
+}
+
+
 dl { margin: 0; }
 dt { margin-top: 1rem; }
 dd { margin-left: 0; margin-top: .25rem; }
