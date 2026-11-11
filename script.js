@@ -131,3 +131,24 @@ const $heatInput = document.getElementById("heat-input");
 const $addHeatButton = document.getElementById("add-heat");
 const $makeSwordButton = document.getElementById("make-sword");
 const $resetButton = document.getElementById("reset-forge");
+
+
+// Heat event listener
+
+$addHeatButton.addEventListener("click", function(){
+
+    const amount = Number($heatInput.value);
+
+    if (
+        $heatInput.value.trim() === "" ||
+        !Number.isFinite(amount) ||
+        !Number.isInteger(amount) ||
+        amount <= 0
+    ){
+        $actionMessage.textContent = "Please enter a positive whole number.";
+    }
+    else{
+        heatForge(amount);
+    }
+
+});
