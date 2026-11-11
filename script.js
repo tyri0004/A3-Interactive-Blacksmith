@@ -128,7 +128,7 @@ resetForge()
 // Listen for clicks on the Add heat button
 // Read the input and convert it into a number
 // Check that the input is a valid positive whole number
-//  If valid, call heatForge(amount)
+// If valid, call heatForge(amount)
 // Listen for clicks on Make sword and call makeSword()
 // Listen for clicks on Reset forge and call resetForge()
 
