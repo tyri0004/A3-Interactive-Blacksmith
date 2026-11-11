@@ -152,3 +152,17 @@ $addHeatButton.addEventListener("click", function(){
     }
 
 });
+
+// Make Sword Button
+
+$makeSwordButton.addEventListener("click", function(){
+
+    makeSword();
+
+});
+
+$resetButton.addEventListener("click", function(){
+
+    resetForge();
+
+});
